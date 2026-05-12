@@ -44,16 +44,27 @@
 		<section id="mm-contactpage">
 			<div class="contactblurb">
 				<h1 class="title">Contact</h1>
-				<!-- Web Form -->
+				<!-- Web Form, Multiple Field Sets -->
 				<form action="sd" method="post">
+					<!--Web Form: Text-->
 					<p class="form">
 						<label for="Name">Name:</label>
 						<input type="text" id="Name" name="username" />
 					</p>
-					
+										
 					<p class="form email">
 						<label for="Mail">Email:</label>
 						<input type="email" id="Mail" name="useremail" />
+					</p>
+					
+					<!--Web Form: Selection List-->
+					<p class="contacttype">
+						<label for="contactype">What kind of message are you leaving?</label>
+						<select name="contactytype" id="contactype">
+							<option value="bugreport">Bug Report</option>
+							<option value="personal">Personal Message</option>
+							<option value="other">Other</option>
+						</select>
 					</p>
 					
 					<!--Web Form: Text Area-->
@@ -61,6 +72,58 @@
 						<label for="messasge">Message:</label>
 						<textarea id="message" name="usermessage"></textarea>
 					</p>
+					
+					<!--Web Form: Radio, Date-->
+					<p class="datetime">
+						<label="datetime">Include Date:</label>
+						<input name="datetime" type="radio" value="Current" /> <span id="current"></span>
+						<input name="datetime" type="radio" value="NoDate" />Do Not Include Date
+					</p>
+					
+					<p> <b>Optional</b> </p>
+					
+					<!--Web Form: Checkboxes-->
+					<p class="form favorite">
+						<label for="favoritecat">Who was your favorite cat?</label>
+						<br>
+						<input type="checkbox" name="favecats" value="fanta" /> Fanta
+						<br>
+						<input type="checkbox" name="favecats" value="sylvie" /> Sylvie
+						<br>
+						<input type="checkbox" name="favecats" value="plinko" /> Plinko
+						<br>
+						<input type="checkbox" name="favecats" value="asami" /> Asami
+						<br>
+						<input type="checkbox" name="favecats" value="nokoappa" /> Noko & Appa
+					</p>
+					
+					<p class="numcats">
+						<label for="numcats">How many cats are you thinking of getting?</label>
+						<input type="number" name="numcats" id="numcats" min="0">
+					</p>
+					
+					<!--Web Form: Range Sliders -->
+					<p class="rating">
+						<label for="rating">How do you feel about the provided information?</label>
+						<br>
+						<span>Useless</span>
+						<input type="range" name="rating" id="rating" value="3" min="1" max="5">
+						<span>Helpful</span>
+					</p>
+					
+					<!--Web Form: Radio-->
+					<p class="catyn">
+						<label for="catyn">Did this help you determine if you want a cat?</label>
+						<input name="catyn" type="radio" value="Yes" /> Yes
+						<input name="catyn" type="radio" value="No" /> No
+					</p>
+					
+					<!--Web Form: Submit Button-->
+					<p class="submit">
+						<input type="submit" value="Submit">
+					</p>
+					
+					<script src="murdermittionsscripts.js"></script>
 				</form>
 
 			</div>
