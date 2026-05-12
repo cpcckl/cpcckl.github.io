@@ -44,21 +44,25 @@
 		<section id="mm-contactpage">
 			<div class="contactblurb">
 				<h1 class="title">Contact</h1>
-				<h3 class="subtitle">Contact Form</h3>
-				
-				<br>
-		
-				<p class="text">
-					Contact
-				</p>
-				
-				<p class="text">
-					Contact
-				</p>
-				
-				<p class="text">
-					Contact
-				</p>
+				<!-- Web Form -->
+				<form action="sd" method="post">
+					<p class="form">
+						<label for="Name">Name:</label>
+						<input type="text" id="Name" name="username" />
+					</p>
+					
+					<p class="form email">
+						<label for="Mail">Email:</label>
+						<input type="email" id="Mail" name="useremail" />
+					</p>
+					
+					<!--Web Form: Text Area-->
+					<p class="message">
+						<label for="messasge">Message:</label>
+						<textarea id="message" name="usermessage"></textarea>
+					</p>
+				</form>
+
 			</div>
 	</section>
 </body>
