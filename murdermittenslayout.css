@@ -1,0 +1,52 @@
+/* layout stylesheet */
+/* Project_Part1_WEB110-N801_Lor, Kathy */
+
+/* Tutorial 2: pseudo classes and elements and attribute selectors */
+#mm-navigationbar .navigationbar{
+	
+}
+
+#mm-navigationbar .mm-lists{
+	
+}
+
+/* -- #mm-mainpage .title{
+	color: #333f56;
+} */
+
+/* #mm-mainpage .subtitle .forwardtext{
+	color: #333f56;
+} */
+
+/* Tutorial 2: float layout */
+#mm-mainpage .catpic{
+	display: float;
+	widht: 100%;
+}
+
+/*Tutorial 2: grid layout */
+#mm-mainpage .thecats{
+	display: grid;
+	grid-column: 2;
+	grid-row: 2;
+}
+
+/* Tutorial 3: positioning and overllow */
+#mm-mainpage .catpic{
+	position: relative;
+	overflow: hidden;
+	width: 250px;
+	height: 450px;
+}
+
+@media only screen and (max-width: 600px){
+	width: 100%;
+}
+
+/* Tutorial 2: block elements; Tutorial 3: positioning*/
+#mm-fantapage .fantaphotos{
+	object-align: left;
+	display: block;
+	position: relative;
+}
+
