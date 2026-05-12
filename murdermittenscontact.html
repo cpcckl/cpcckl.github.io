@@ -49,18 +49,18 @@
 					<!--Web Form: Text-->
 					<p class="form">
 						<label for="Name">Name:</label>
-						<input type="text" id="Name" name="username" />
+						<input type="text" id="Name" name="username" required/>
 					</p>
 										
 					<p class="form email">
 						<label for="Mail">Email:</label>
-						<input type="email" id="Mail" name="useremail" />
+						<input type="email" id="Mail" name="useremail" required/>
 					</p>
 					
 					<!--Web Form: Selection List-->
 					<p class="contacttype">
 						<label for="contactype">What kind of message are you leaving?</label>
-						<select name="contactytype" id="contactype">
+						<select name="contactytype" id="contactype" required>
 							<option value="bugreport">Bug Report</option>
 							<option value="personal">Personal Message</option>
 							<option value="other">Other</option>
@@ -70,7 +70,7 @@
 					<!--Web Form: Text Area-->
 					<p class="message">
 						<label for="messasge">Message:</label>
-						<textarea id="message" name="usermessage"></textarea>
+						<textarea id="message" name="usermessage" required></textarea>
 					</p>
 					
 					<!--Web Form: Radio, Date-->
